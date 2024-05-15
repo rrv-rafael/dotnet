@@ -1,0 +1,15 @@
+/Users/rafael/Documents/All/Estudo/dotnet/fundamentos-csharp/Calculadora/bin/Debug/net8.0/Calculadora
+/Users/rafael/Documents/All/Estudo/dotnet/fundamentos-csharp/Calculadora/bin/Debug/net8.0/Calculadora.deps.json
+/Users/rafael/Documents/All/Estudo/dotnet/fundamentos-csharp/Calculadora/bin/Debug/net8.0/Calculadora.runtimeconfig.json
+/Users/rafael/Documents/All/Estudo/dotnet/fundamentos-csharp/Calculadora/bin/Debug/net8.0/Calculadora.dll
+/Users/rafael/Documents/All/Estudo/dotnet/fundamentos-csharp/Calculadora/bin/Debug/net8.0/Calculadora.pdb
+/Users/rafael/Documents/All/Estudo/dotnet/fundamentos-csharp/Calculadora/obj/Debug/net8.0/Calculadora.GeneratedMSBuildEditorConfig.editorconfig
+/Users/rafael/Documents/All/Estudo/dotnet/fundamentos-csharp/Calculadora/obj/Debug/net8.0/Calculadora.AssemblyInfoInputs.cache
+/Users/rafael/Documents/All/Estudo/dotnet/fundamentos-csharp/Calculadora/obj/Debug/net8.0/Calculadora.AssemblyInfo.cs
+/Users/rafael/Documents/All/Estudo/dotnet/fundamentos-csharp/Calculadora/obj/Debug/net8.0/Calculadora.csproj.CoreCompileInputs.cache
+/Users/rafael/Documents/All/Estudo/dotnet/fundamentos-csharp/Calculadora/obj/Debug/net8.0/Calculadora.sourcelink.json
+/Users/rafael/Documents/All/Estudo/dotnet/fundamentos-csharp/Calculadora/obj/Debug/net8.0/Calculadora.dll
+/Users/rafael/Documents/All/Estudo/dotnet/fundamentos-csharp/Calculadora/obj/Debug/net8.0/refint/Calculadora.dll
+/Users/rafael/Documents/All/Estudo/dotnet/fundamentos-csharp/Calculadora/obj/Debug/net8.0/Calculadora.pdb
+/Users/rafael/Documents/All/Estudo/dotnet/fundamentos-csharp/Calculadora/obj/Debug/net8.0/Calculadora.genruntimeconfig.cache
+/Users/rafael/Documents/All/Estudo/dotnet/fundamentos-csharp/Calculadora/obj/Debug/net8.0/ref/Calculadora.dll
