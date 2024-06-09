@@ -1,0 +1,15 @@
+C:\All\Estudo\dotnet\fundamentos-csharp\EditorTexto\bin\Debug\net8.0\EditorTexto.exe
+C:\All\Estudo\dotnet\fundamentos-csharp\EditorTexto\bin\Debug\net8.0\EditorTexto.deps.json
+C:\All\Estudo\dotnet\fundamentos-csharp\EditorTexto\bin\Debug\net8.0\EditorTexto.runtimeconfig.json
+C:\All\Estudo\dotnet\fundamentos-csharp\EditorTexto\bin\Debug\net8.0\EditorTexto.dll
+C:\All\Estudo\dotnet\fundamentos-csharp\EditorTexto\bin\Debug\net8.0\EditorTexto.pdb
+C:\All\Estudo\dotnet\fundamentos-csharp\EditorTexto\obj\Debug\net8.0\EditorTexto.GeneratedMSBuildEditorConfig.editorconfig
+C:\All\Estudo\dotnet\fundamentos-csharp\EditorTexto\obj\Debug\net8.0\EditorTexto.AssemblyInfoInputs.cache
+C:\All\Estudo\dotnet\fundamentos-csharp\EditorTexto\obj\Debug\net8.0\EditorTexto.AssemblyInfo.cs
+C:\All\Estudo\dotnet\fundamentos-csharp\EditorTexto\obj\Debug\net8.0\EditorTexto.csproj.CoreCompileInputs.cache
+C:\All\Estudo\dotnet\fundamentos-csharp\EditorTexto\obj\Debug\net8.0\EditorTexto.sourcelink.json
+C:\All\Estudo\dotnet\fundamentos-csharp\EditorTexto\obj\Debug\net8.0\EditorTexto.dll
+C:\All\Estudo\dotnet\fundamentos-csharp\EditorTexto\obj\Debug\net8.0\refint\EditorTexto.dll
+C:\All\Estudo\dotnet\fundamentos-csharp\EditorTexto\obj\Debug\net8.0\EditorTexto.pdb
+C:\All\Estudo\dotnet\fundamentos-csharp\EditorTexto\obj\Debug\net8.0\EditorTexto.genruntimeconfig.cache
+C:\All\Estudo\dotnet\fundamentos-csharp\EditorTexto\obj\Debug\net8.0\ref\EditorTexto.dll

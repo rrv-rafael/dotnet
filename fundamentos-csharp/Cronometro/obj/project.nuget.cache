@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xaV19w5GDP48GfwFlSONO8BHhQfuiZzU9xeSJx3uwl6X6xdl6/sjn+hAdZu3RU3tmyvrQXHWpfnAwn5jKTM3Vw==",
+  "dgSpecHash": "hQP312ph2XCgZQ9R8aTzprb1uG/St+pdge/OU66OH5bZ2PAIiyVhj1QXSZazQUOT4QVxr5DpbKdqIdsThtmheA==",
   "success": true,
-  "projectFilePath": "/Users/rafael/Documents/All/Estudo/dotnet/fundamentos-csharp/Cronometro/Cronometro.csproj",
+  "projectFilePath": "C:\\All\\Estudo\\dotnet\\fundamentos-csharp\\Cronometro\\Cronometro.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

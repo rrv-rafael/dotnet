@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\All\\Estudo\\dotnet\\fundamentos-csharp\\Cronometro\\Cronometro.csproj",
-      "projectName": "Cronometro",
-      "projectPath": "C:\\All\\Estudo\\dotnet\\fundamentos-csharp\\Cronometro\\Cronometro.csproj",
+      "projectUniqueName": "C:\\All\\Estudo\\dotnet\\fundamentos-csharp\\EditorTexto\\EditorTexto.csproj",
+      "projectName": "EditorTexto",
+      "projectPath": "C:\\All\\Estudo\\dotnet\\fundamentos-csharp\\EditorTexto\\EditorTexto.csproj",
       "packagesPath": "C:\\Users\\rrvra\\.nuget\\packages\\",
-      "outputPath": "C:\\All\\Estudo\\dotnet\\fundamentos-csharp\\Cronometro\\obj\\",
+      "outputPath": "C:\\All\\Estudo\\dotnet\\fundamentos-csharp\\EditorTexto\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
