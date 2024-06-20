@@ -1,0 +1,15 @@
+/Users/rafael/Documents/All/Estudo/dotnet/fundamentos-csharp/EditorHtml/bin/Debug/net8.0/EditorHtml
+/Users/rafael/Documents/All/Estudo/dotnet/fundamentos-csharp/EditorHtml/bin/Debug/net8.0/EditorHtml.deps.json
+/Users/rafael/Documents/All/Estudo/dotnet/fundamentos-csharp/EditorHtml/bin/Debug/net8.0/EditorHtml.runtimeconfig.json
+/Users/rafael/Documents/All/Estudo/dotnet/fundamentos-csharp/EditorHtml/bin/Debug/net8.0/EditorHtml.dll
+/Users/rafael/Documents/All/Estudo/dotnet/fundamentos-csharp/EditorHtml/bin/Debug/net8.0/EditorHtml.pdb
+/Users/rafael/Documents/All/Estudo/dotnet/fundamentos-csharp/EditorHtml/obj/Debug/net8.0/EditorHtml.GeneratedMSBuildEditorConfig.editorconfig
+/Users/rafael/Documents/All/Estudo/dotnet/fundamentos-csharp/EditorHtml/obj/Debug/net8.0/EditorHtml.AssemblyInfoInputs.cache
+/Users/rafael/Documents/All/Estudo/dotnet/fundamentos-csharp/EditorHtml/obj/Debug/net8.0/EditorHtml.AssemblyInfo.cs
+/Users/rafael/Documents/All/Estudo/dotnet/fundamentos-csharp/EditorHtml/obj/Debug/net8.0/EditorHtml.csproj.CoreCompileInputs.cache
+/Users/rafael/Documents/All/Estudo/dotnet/fundamentos-csharp/EditorHtml/obj/Debug/net8.0/EditorHtml.sourcelink.json
+/Users/rafael/Documents/All/Estudo/dotnet/fundamentos-csharp/EditorHtml/obj/Debug/net8.0/EditorHtml.dll
+/Users/rafael/Documents/All/Estudo/dotnet/fundamentos-csharp/EditorHtml/obj/Debug/net8.0/refint/EditorHtml.dll
+/Users/rafael/Documents/All/Estudo/dotnet/fundamentos-csharp/EditorHtml/obj/Debug/net8.0/EditorHtml.pdb
+/Users/rafael/Documents/All/Estudo/dotnet/fundamentos-csharp/EditorHtml/obj/Debug/net8.0/EditorHtml.genruntimeconfig.cache
+/Users/rafael/Documents/All/Estudo/dotnet/fundamentos-csharp/EditorHtml/obj/Debug/net8.0/ref/EditorHtml.dll
