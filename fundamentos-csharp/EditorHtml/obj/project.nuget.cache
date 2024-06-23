@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "eh0lC8FKBtg+o9LX6vWQw41MYRqyYs4l/IGbBzaqtstWC7/P4VIzt+06YcpcgoodjwnBnYEU3xVcEklvhhWfTg==",
+  "dgSpecHash": "2Pz5xJzIiGCEDyZDy667eE3g/8K+mfEZTfvJTSXIwEOix0/OTF5P4fsoDAZFVirmVzulT5k9RMBLCqDy/MS/Hg==",
   "success": true,
-  "projectFilePath": "/Users/rafael/Documents/All/Estudo/dotnet/fundamentos-csharp/EditorHtml/EditorHtml.csproj",
+  "projectFilePath": "C:\\All\\Estudo\\dotnet\\fundamentos-csharp\\EditorHtml\\EditorHtml.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
