@@ -1,10 +1,11 @@
-﻿Console.Clear();
+﻿using System.Globalization;
 
-var data = DateTime.Now;
+Console.Clear();
 
-if (data.Date == DateTime.Now.Date)
-{
-    Console.WriteLine("É igual!");
-}
+var pt = new CultureInfo("pt-PT");
+var br = new CultureInfo("pt-BR");
+var us = new CultureInfo("en-US");
+var de = new CultureInfo("de-DE");
+var atual = CultureInfo.CurrentCulture;
 
-Console.WriteLine(data);
+Console.WriteLine(DateTime.Now.ToString("D", atual));
