@@ -2,10 +2,25 @@
 
 Console.Clear();
 
-var pt = new CultureInfo("pt-PT");
-var br = new CultureInfo("pt-BR");
-var us = new CultureInfo("en-US");
-var de = new CultureInfo("de-DE");
-var atual = CultureInfo.CurrentCulture;
+var dateTimeUtc = DateTime.UtcNow;
 
-Console.WriteLine(DateTime.Now.ToString("D", atual));
+Console.WriteLine(DateTime.Now);
+Console.WriteLine(dateTimeUtc);
+
+Console.WriteLine(dateTimeUtc.ToLocalTime());
+
+var timezoneAustralia = TimeZoneInfo.FindSystemTimeZoneById("Pacific/Auckland");
+Console.WriteLine(timezoneAustralia);
+
+var horaAustralia = TimeZoneInfo.ConvertTimeFromUtc(dateTimeUtc, timezoneAustralia);
+Console.WriteLine(horaAustralia);
+
+var timezones = TimeZoneInfo.GetSystemTimeZones();
+
+foreach (var timezone in timezones)
+{
+    Console.WriteLine(timezone.Id);
+    Console.WriteLine(timezone);
+    Console.WriteLine(TimeZoneInfo.ConvertTimeFromUtc(dateTimeUtc, timezone));
+    Console.WriteLine("----------------------");
+}
