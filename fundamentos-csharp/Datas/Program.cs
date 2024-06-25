@@ -2,25 +2,47 @@
 
 Console.Clear();
 
-var dateTimeUtc = DateTime.UtcNow;
+//Timespan:
 
-Console.WriteLine(DateTime.Now);
-Console.WriteLine(dateTimeUtc);
+var timeSpan = new TimeSpan();
+Console.WriteLine(timeSpan);
 
-Console.WriteLine(dateTimeUtc.ToLocalTime());
+var timeSpanNanoSegundos = new TimeSpan(1);
+Console.WriteLine(timeSpanNanoSegundos);
 
-var timezoneAustralia = TimeZoneInfo.FindSystemTimeZoneById("Pacific/Auckland");
-Console.WriteLine(timezoneAustralia);
+var timeSpanHoraMinutoSegundo = new TimeSpan(5, 12, 8);
+Console.WriteLine(timeSpanHoraMinutoSegundo);
 
-var horaAustralia = TimeZoneInfo.ConvertTimeFromUtc(dateTimeUtc, timezoneAustralia);
-Console.WriteLine(horaAustralia);
+var timeSpanDiaHoraMinutoSegundo = new TimeSpan(3, 5, 50, 10);
+Console.WriteLine(timeSpanDiaHoraMinutoSegundo);
 
-var timezones = TimeZoneInfo.GetSystemTimeZones();
+var timeSpanDiaHoraMinutoSegundoMilissegundo = new TimeSpan(15, 12, 55, 8, 100);
+Console.WriteLine(timeSpanDiaHoraMinutoSegundoMilissegundo);
 
-foreach (var timezone in timezones)
-{
-    Console.WriteLine(timezone.Id);
-    Console.WriteLine(timezone);
-    Console.WriteLine(TimeZoneInfo.ConvertTimeFromUtc(dateTimeUtc, timezone));
-    Console.WriteLine("----------------------");
-}
+Console.WriteLine(timeSpanHoraMinutoSegundo - timeSpanDiaHoraMinutoSegundo);
+Console.WriteLine(timeSpanDiaHoraMinutoSegundo.Days);
+Console.WriteLine(timeSpanDiaHoraMinutoSegundo.Add(new TimeSpan(12, 0, 0)));
+
+// Timezone:
+// var dateTimeUtc = DateTime.UtcNow;
+
+// Console.WriteLine(DateTime.Now);
+// Console.WriteLine(dateTimeUtc);
+
+// Console.WriteLine(dateTimeUtc.ToLocalTime());
+
+// var timezoneAustralia = TimeZoneInfo.FindSystemTimeZoneById("Pacific/Auckland");
+// Console.WriteLine(timezoneAustralia);
+
+// var horaAustralia = TimeZoneInfo.ConvertTimeFromUtc(dateTimeUtc, timezoneAustralia);
+// Console.WriteLine(horaAustralia);
+
+// var timezones = TimeZoneInfo.GetSystemTimeZones();
+
+// foreach (var timezone in timezones)
+// {
+//     Console.WriteLine(timezone.Id);
+//     Console.WriteLine(timezone);
+//     Console.WriteLine(TimeZoneInfo.ConvertTimeFromUtc(dateTimeUtc, timezone));
+//     Console.WriteLine("----------------------");
+// }
