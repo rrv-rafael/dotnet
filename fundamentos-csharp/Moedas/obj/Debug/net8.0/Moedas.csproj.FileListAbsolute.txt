@@ -1,0 +1,15 @@
+C:\All\Estudo\dotnet\fundamentos-csharp\Moedas\bin\Debug\net8.0\Moedas.exe
+C:\All\Estudo\dotnet\fundamentos-csharp\Moedas\bin\Debug\net8.0\Moedas.deps.json
+C:\All\Estudo\dotnet\fundamentos-csharp\Moedas\bin\Debug\net8.0\Moedas.runtimeconfig.json
+C:\All\Estudo\dotnet\fundamentos-csharp\Moedas\bin\Debug\net8.0\Moedas.dll
+C:\All\Estudo\dotnet\fundamentos-csharp\Moedas\bin\Debug\net8.0\Moedas.pdb
+C:\All\Estudo\dotnet\fundamentos-csharp\Moedas\obj\Debug\net8.0\Moedas.GeneratedMSBuildEditorConfig.editorconfig
+C:\All\Estudo\dotnet\fundamentos-csharp\Moedas\obj\Debug\net8.0\Moedas.AssemblyInfoInputs.cache
+C:\All\Estudo\dotnet\fundamentos-csharp\Moedas\obj\Debug\net8.0\Moedas.AssemblyInfo.cs
+C:\All\Estudo\dotnet\fundamentos-csharp\Moedas\obj\Debug\net8.0\Moedas.csproj.CoreCompileInputs.cache
+C:\All\Estudo\dotnet\fundamentos-csharp\Moedas\obj\Debug\net8.0\Moedas.sourcelink.json
+C:\All\Estudo\dotnet\fundamentos-csharp\Moedas\obj\Debug\net8.0\Moedas.dll
+C:\All\Estudo\dotnet\fundamentos-csharp\Moedas\obj\Debug\net8.0\refint\Moedas.dll
+C:\All\Estudo\dotnet\fundamentos-csharp\Moedas\obj\Debug\net8.0\Moedas.pdb
+C:\All\Estudo\dotnet\fundamentos-csharp\Moedas\obj\Debug\net8.0\Moedas.genruntimeconfig.cache
+C:\All\Estudo\dotnet\fundamentos-csharp\Moedas\obj\Debug\net8.0\ref\Moedas.dll
