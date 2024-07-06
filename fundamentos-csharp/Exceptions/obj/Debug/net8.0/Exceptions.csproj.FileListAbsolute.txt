@@ -1,0 +1,15 @@
+/Users/rafael/Documents/All/Estudo/dotnet/fundamentos-csharp/Exceptions/bin/Debug/net8.0/Exceptions
+/Users/rafael/Documents/All/Estudo/dotnet/fundamentos-csharp/Exceptions/bin/Debug/net8.0/Exceptions.deps.json
+/Users/rafael/Documents/All/Estudo/dotnet/fundamentos-csharp/Exceptions/bin/Debug/net8.0/Exceptions.runtimeconfig.json
+/Users/rafael/Documents/All/Estudo/dotnet/fundamentos-csharp/Exceptions/bin/Debug/net8.0/Exceptions.dll
+/Users/rafael/Documents/All/Estudo/dotnet/fundamentos-csharp/Exceptions/bin/Debug/net8.0/Exceptions.pdb
+/Users/rafael/Documents/All/Estudo/dotnet/fundamentos-csharp/Exceptions/obj/Debug/net8.0/Exceptions.GeneratedMSBuildEditorConfig.editorconfig
+/Users/rafael/Documents/All/Estudo/dotnet/fundamentos-csharp/Exceptions/obj/Debug/net8.0/Exceptions.AssemblyInfoInputs.cache
+/Users/rafael/Documents/All/Estudo/dotnet/fundamentos-csharp/Exceptions/obj/Debug/net8.0/Exceptions.AssemblyInfo.cs
+/Users/rafael/Documents/All/Estudo/dotnet/fundamentos-csharp/Exceptions/obj/Debug/net8.0/Exceptions.csproj.CoreCompileInputs.cache
+/Users/rafael/Documents/All/Estudo/dotnet/fundamentos-csharp/Exceptions/obj/Debug/net8.0/Exceptions.sourcelink.json
+/Users/rafael/Documents/All/Estudo/dotnet/fundamentos-csharp/Exceptions/obj/Debug/net8.0/Exceptions.dll
+/Users/rafael/Documents/All/Estudo/dotnet/fundamentos-csharp/Exceptions/obj/Debug/net8.0/refint/Exceptions.dll
+/Users/rafael/Documents/All/Estudo/dotnet/fundamentos-csharp/Exceptions/obj/Debug/net8.0/Exceptions.pdb
+/Users/rafael/Documents/All/Estudo/dotnet/fundamentos-csharp/Exceptions/obj/Debug/net8.0/Exceptions.genruntimeconfig.cache
+/Users/rafael/Documents/All/Estudo/dotnet/fundamentos-csharp/Exceptions/obj/Debug/net8.0/ref/Exceptions.dll
