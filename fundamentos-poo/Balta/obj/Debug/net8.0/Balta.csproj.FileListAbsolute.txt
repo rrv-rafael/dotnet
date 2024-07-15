@@ -1,0 +1,15 @@
+/Users/rafael/Documents/All/Estudo/dotnet/fundamentos-poo/Balta/bin/Debug/net8.0/Balta
+/Users/rafael/Documents/All/Estudo/dotnet/fundamentos-poo/Balta/bin/Debug/net8.0/Balta.deps.json
+/Users/rafael/Documents/All/Estudo/dotnet/fundamentos-poo/Balta/bin/Debug/net8.0/Balta.runtimeconfig.json
+/Users/rafael/Documents/All/Estudo/dotnet/fundamentos-poo/Balta/bin/Debug/net8.0/Balta.dll
+/Users/rafael/Documents/All/Estudo/dotnet/fundamentos-poo/Balta/bin/Debug/net8.0/Balta.pdb
+/Users/rafael/Documents/All/Estudo/dotnet/fundamentos-poo/Balta/obj/Debug/net8.0/Balta.GeneratedMSBuildEditorConfig.editorconfig
+/Users/rafael/Documents/All/Estudo/dotnet/fundamentos-poo/Balta/obj/Debug/net8.0/Balta.AssemblyInfoInputs.cache
+/Users/rafael/Documents/All/Estudo/dotnet/fundamentos-poo/Balta/obj/Debug/net8.0/Balta.AssemblyInfo.cs
+/Users/rafael/Documents/All/Estudo/dotnet/fundamentos-poo/Balta/obj/Debug/net8.0/Balta.csproj.CoreCompileInputs.cache
+/Users/rafael/Documents/All/Estudo/dotnet/fundamentos-poo/Balta/obj/Debug/net8.0/Balta.sourcelink.json
+/Users/rafael/Documents/All/Estudo/dotnet/fundamentos-poo/Balta/obj/Debug/net8.0/Balta.dll
+/Users/rafael/Documents/All/Estudo/dotnet/fundamentos-poo/Balta/obj/Debug/net8.0/refint/Balta.dll
+/Users/rafael/Documents/All/Estudo/dotnet/fundamentos-poo/Balta/obj/Debug/net8.0/Balta.pdb
+/Users/rafael/Documents/All/Estudo/dotnet/fundamentos-poo/Balta/obj/Debug/net8.0/Balta.genruntimeconfig.cache
+/Users/rafael/Documents/All/Estudo/dotnet/fundamentos-poo/Balta/obj/Debug/net8.0/ref/Balta.dll
