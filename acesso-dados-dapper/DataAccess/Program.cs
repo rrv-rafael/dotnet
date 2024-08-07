@@ -1,4 +1,5 @@
 ﻿using System.Data;
+using System.Runtime.InteropServices;
 using Dapper;
 using DataAccess.Models;
 using Microsoft.Data.SqlClient;
@@ -17,7 +18,11 @@ using (var connection = new SqlConnection(connectionString))
         // DeleteCategory(connection);
         // ListCategories(connection);
         // GetCategory(connection);
-        ExecuteProcedure(connection);
+        // ExecuteProcedure(connection);
+        // ExecuteReadProcedure(connection);
+        // ExecuteScalar(connection);
+        // ReadView(connection);
+        OneToOne(connection);
     }
 }
 
@@ -38,7 +43,7 @@ static void GetCategory(SqlConnection connection)
         Id = new Guid("af3407aa-11ae-4621-a2ef-2028b85507c4")
     });
 
-    Console.WriteLine($"{category?.Id.ToString() ?? "Registro não encontrado"} - {category?.Title ?? "Registro não encontrado"}");
+    Console.WriteLine($"{category.Id} - {category?.Title ?? "Registro não encontrado"}");
 }
 
 static void CreateCategory(SqlConnection connection)
@@ -89,7 +94,7 @@ static void DeleteCategory(SqlConnection connection)
 
     var rows = connection.Execute(deleteQuery, new
     {
-        Id = new Guid("C123CCE2-1FD9-4F05-8F64-2B53BBADDFCA")
+        Id = new Guid("43d199ef-1e63-4e4f-95fd-88efda121dd7")
     });
 
     Console.WriteLine($"{rows} registros deletados.");
@@ -148,10 +153,83 @@ static void CreateManyCategories(SqlConnection connection)
 
 static void ExecuteProcedure(SqlConnection connection)
 {
-    var sql = "spDeleteStudent";
-    var pars = new { StudentId = "E0B12456-1BC8-4910-82BB-6EEDE2B24155" };
+    var procedure = "spDeleteStudent";
+    var pars = new { StudentId = "4167633b-551e-49b4-a61b-af74e49e6cc2" };
 
-    var affectedRows = connection.Execute(sql, pars, commandType: CommandType.StoredProcedure);
+    var affectedRows = connection.Execute(procedure, pars, commandType: CommandType.StoredProcedure);
 
     Console.WriteLine($"{affectedRows} linhas afetadas.");
+}
+
+static void ExecuteReadProcedure(SqlConnection connection)
+{
+    var procedureRead = "spGetCoursesByCategory";
+    var pars = new { CategoryId = "af3407aa-11ae-4621-a2ef-2028b85507c4" };
+
+    var courses = connection.Query<Course>(procedureRead, pars, commandType: CommandType.StoredProcedure);
+
+    foreach (var course in courses)
+    {
+        Console.WriteLine($"{course.Id} - {course.Title}");
+    }
+}
+
+static void ExecuteScalar(SqlConnection connection)
+{
+    var category = new Category
+    {
+        Title = "Amazon AWS",
+        Url = "amazon",
+        Description = "Categoria destinada a serviços do AWS.",
+        Order = 8,
+        Summary = "AWS Cloud",
+        Featured = false
+    };
+
+    var insertSql = @"INSERT INTO Category OUTPUT inserted.Id VALUES (NEWID(), @Title, @Url, @Summary, @Order, @Description, @Featured)";
+
+    var id = connection.ExecuteScalar<Guid>(insertSql, new
+    {
+        category.Title,
+        category.Url,
+        category.Summary,
+        category.Order,
+        category.Description,
+        category.Featured
+    });
+
+    Console.WriteLine($"A categoria inserida foi: {id}.");
+}
+
+static void ReadView(SqlConnection connection)
+{
+    var sql = @"SELECT * FROM VWCourses";
+    var courses = connection.Query<Course>(sql);
+
+    foreach (var course in courses)
+    {
+        Console.WriteLine($"{course.Id} - {course.Title}");
+    }
+}
+
+static void OneToOne(SqlConnection connection)
+{
+    var sql = @"SELECT
+                    *
+                FROM
+                    CareerItem ci
+                INNER JOIN 
+                    Course c ON ci.CourseId = c.Id";
+
+    var items = connection.Query<CareerItem, Course, CareerItem>(sql, (careerItem, course) =>
+    {
+        careerItem.Course = course;
+
+        return careerItem;
+    }, splitOn: "Id");
+
+    foreach (var item in items)
+    {
+        Console.WriteLine($"{item.Title} - Curso: {item.Course.Title}");
+    }
 }
