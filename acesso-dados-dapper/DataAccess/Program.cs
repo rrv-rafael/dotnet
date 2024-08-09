@@ -22,7 +22,12 @@ using (var connection = new SqlConnection(connectionString))
         // ExecuteReadProcedure(connection);
         // ExecuteScalar(connection);
         // ReadView(connection);
-        OneToOne(connection);
+        // OneToOne(connection);
+        // OneToMany(connection);
+        // QueryMultiple(connection);
+        // SelectIn(connection);
+        // Like(connection, "backend");
+        Transaction(connection);
     }
 }
 
@@ -231,5 +236,149 @@ static void OneToOne(SqlConnection connection)
     foreach (var item in items)
     {
         Console.WriteLine($"{item.Title} - Curso: {item.Course.Title}");
+    }
+}
+
+static void OneToMany(SqlConnection connection)
+{
+    var sql = @"SELECT
+                    c.Id,
+                    c.Title,
+                    ci.CareerId,
+                    ci.Title
+                FROM
+                    Career c
+                INNER JOIN
+                    CareerItem ci ON c.Id = ci.CareerId
+                ORDER BY
+                    c.Title";
+
+    var careers = new List<Career>();
+    var items = connection.Query<Career, CareerItem, Career>(sql, (career, item) =>
+    {
+        var car = careers.Where(x => x.Id == career.Id).FirstOrDefault();
+
+        if (car == null)
+        {
+            car = career;
+            car.CareerItems.Add(item);
+            careers.Add(car);
+        }
+        else
+        {
+            car.CareerItems.Add(item);
+        }
+
+        return career;
+    }, splitOn: "CareerId");
+
+    foreach (var career in careers)
+    {
+        Console.WriteLine($"{career.Title}");
+
+        foreach (var item in career.CareerItems)
+        {
+            Console.WriteLine($" - {item.Title}");
+        }
+    }
+}
+
+static void QueryMultiple(SqlConnection connection)
+{
+    var query = "SELECT * FROM Category; SELECT * FROM Course";
+
+    using (var multi = connection.QueryMultiple(query))
+    {
+        var categories = multi.Read<Category>();
+        var courses = multi.Read<Course>();
+
+        foreach (var item in categories)
+        {
+            Console.WriteLine(item.Title);
+        }
+
+        foreach (var course in courses)
+        {
+            Console.WriteLine(course.Title);
+        }
+    }
+}
+
+static void SelectIn(SqlConnection connection)
+{
+    var query = @"SELECT
+                       *
+                    FROM
+                        Career
+                    WHERE
+                        Id IN @Id";
+
+    var items = connection.Query<Career>(query, new
+    {
+        Id = new[]
+        {
+            "01ae8a85-b4e8-4194-a0f1-1c6190af54cb",
+            "e6730d1c-6870-4df3-ae68-438624e04c72"
+        }
+    });
+
+    foreach (var item in items)
+    {
+        Console.WriteLine(item.Title);
+    }
+}
+
+static void Like(SqlConnection connection, string term)
+{
+    var query = @"SELECT
+                       *
+                    FROM
+                        Course
+                    WHERE
+                        Title LIKE @exp";
+
+    var items = connection.Query<Course>(query, new
+    {
+        exp = $"%{term}%"
+    });
+
+    foreach (var item in items)
+    {
+        Console.WriteLine(item.Title);
+    }
+}
+
+static void Transaction(SqlConnection connection)
+{
+    var category = new Category
+    {
+        Id = Guid.NewGuid(),
+        Title = "Minha categoria que não quero salvar",
+        Url = "amazon",
+        Description = "Categoria destinada a serviços do AWS.",
+        Order = 8,
+        Summary = "AWS Cloud",
+        Featured = false
+    };
+
+    var insertSql = @"INSERT INTO Category VALUES (@Id, @Title, @Url, @Summary, @Order, @Description, @Featured)";
+
+    using (var transaction = connection.BeginTransaction())
+    {
+        var rows = connection.Execute(insertSql, new
+        {
+            category.Id,
+            category.Title,
+            category.Url,
+            category.Summary,
+            category.Order,
+            category.Description,
+            category.Featured
+        }, transaction);
+
+        transaction.Commit();
+        // transaction.Rollback();
+
+        Console.WriteLine($"{rows} registros inseridos.");
     }
 }
