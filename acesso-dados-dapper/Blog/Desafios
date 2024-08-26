@@ -1,0 +1,23 @@
+Desafios - Usando interface do console application
+
+Cadastrar um usuário - Feito
+Cadastrar um perfil - Feito
+Vincular um usuário a um perfil
+
+Cadastrar uma categoria - Feito
+
+Cadastrar uma tag - Feito
+
+Cadastrar um post - Feito
+
+Vincular um post a uma tag
+
+Listar os usuários (Nome, Email e perfis separados por vírgula)
+Listar categorias com quantidade de posts - Entendi
+Listar tags com quantidade de posts
+Listar os posts de uma categoria - Entendi
+Listar todos os posts com sua categoria - Entendi
+Listar os posts com suas tags (separadas por vírgula)
+
+Slug da Category é UNIQUE
+Email do User é UNIQUE
