@@ -1,0 +1,15 @@
+/Users/rafael/Documents/All/Estudo/dotnet/fundamentos-entity-framework/Blog/bin/Debug/net8.0/Blog
+/Users/rafael/Documents/All/Estudo/dotnet/fundamentos-entity-framework/Blog/bin/Debug/net8.0/Blog.deps.json
+/Users/rafael/Documents/All/Estudo/dotnet/fundamentos-entity-framework/Blog/bin/Debug/net8.0/Blog.runtimeconfig.json
+/Users/rafael/Documents/All/Estudo/dotnet/fundamentos-entity-framework/Blog/bin/Debug/net8.0/Blog.dll
+/Users/rafael/Documents/All/Estudo/dotnet/fundamentos-entity-framework/Blog/bin/Debug/net8.0/Blog.pdb
+/Users/rafael/Documents/All/Estudo/dotnet/fundamentos-entity-framework/Blog/obj/Debug/net8.0/Blog.GeneratedMSBuildEditorConfig.editorconfig
+/Users/rafael/Documents/All/Estudo/dotnet/fundamentos-entity-framework/Blog/obj/Debug/net8.0/Blog.AssemblyInfoInputs.cache
+/Users/rafael/Documents/All/Estudo/dotnet/fundamentos-entity-framework/Blog/obj/Debug/net8.0/Blog.AssemblyInfo.cs
+/Users/rafael/Documents/All/Estudo/dotnet/fundamentos-entity-framework/Blog/obj/Debug/net8.0/Blog.csproj.CoreCompileInputs.cache
+/Users/rafael/Documents/All/Estudo/dotnet/fundamentos-entity-framework/Blog/obj/Debug/net8.0/Blog.sourcelink.json
+/Users/rafael/Documents/All/Estudo/dotnet/fundamentos-entity-framework/Blog/obj/Debug/net8.0/Blog.dll
+/Users/rafael/Documents/All/Estudo/dotnet/fundamentos-entity-framework/Blog/obj/Debug/net8.0/refint/Blog.dll
+/Users/rafael/Documents/All/Estudo/dotnet/fundamentos-entity-framework/Blog/obj/Debug/net8.0/Blog.pdb
+/Users/rafael/Documents/All/Estudo/dotnet/fundamentos-entity-framework/Blog/obj/Debug/net8.0/Blog.genruntimeconfig.cache
+/Users/rafael/Documents/All/Estudo/dotnet/fundamentos-entity-framework/Blog/obj/Debug/net8.0/ref/Blog.dll
