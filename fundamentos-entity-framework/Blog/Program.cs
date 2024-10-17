@@ -6,6 +6,6 @@ class Program
 {
     static void Main(string[] args)
     {
-        var context = new BlogDataContext();
+        using var context = new BlogDataContext();
     }
 }
