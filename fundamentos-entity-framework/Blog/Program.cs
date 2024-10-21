@@ -9,9 +9,11 @@ class Program
     {
         using var context = new BlogDataContext();
 
-        var tag = context.Tags.FirstOrDefault(x => x.Id == 1) ?? throw new InvalidOperationException("Tag not found.");
+        var tags = context.Tags.Where(x => x.Name.Contains("ASP")).ToList();
 
-        context.Remove(tag);
-        context.SaveChanges();
+        foreach (var tag in tags)
+        {
+            Console.WriteLine(tag.Name);
+        }
     }
 }
