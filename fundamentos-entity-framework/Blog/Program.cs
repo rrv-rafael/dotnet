@@ -1,5 +1,6 @@
 ﻿using Blog.Data;
 using Blog.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace Blog;
 
@@ -9,11 +10,8 @@ class Program
     {
         using var context = new BlogDataContext();
 
-        var tags = context.Tags.Where(x => x.Name.Contains("ASP")).ToList();
+        var tag = context.Tags.AsNoTracking().FirstOrDefault(x => x.Id == 1) ?? throw new InvalidOperationException("Tag is not found");
 
-        foreach (var tag in tags)
-        {
-            Console.WriteLine(tag.Name);
-        }
+        Console.WriteLine(tag.Name);
     }
 }
