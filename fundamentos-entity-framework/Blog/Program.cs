@@ -1,4 +1,5 @@
-﻿using Blog.Data;
+﻿using System.Security.Cryptography.X509Certificates;
+using Blog.Data;
 using Blog.Models;
 using Microsoft.EntityFrameworkCore;
 
@@ -10,11 +11,17 @@ class Program
     {
         using var context = new BlogDataContext();
 
-        var posts = context.Posts.AsNoTracking().Include(x => x.Author).Include(x => x.Category).OrderByDescending(x => x.LastUpdateDate).ToList();
+        var post = context
+            .Posts
+            .AsNoTracking()
+            .Include(x => x.Author)
+            .Include(x => x.Category)
+            .OrderByDescending(x => x.LastUpdateDate)
+            .FirstOrDefault() ?? throw new InvalidOperationException("Post not found.");
 
-        foreach (var post in posts)
-        {
-            Console.WriteLine($"{post.Title} escrito por {post.Author?.Name} em {post.Category?.Name}");
-        }
+        post.Author.Name = "André Baltieri";
+
+        context.Posts.Update(post);
+        context.SaveChanges();
     }
 }
