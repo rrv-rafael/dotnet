@@ -10,11 +10,11 @@ class Program
     {
         using var context = new BlogDataContext();
 
-        var posts = context.Posts.AsNoTracking().Include(x => x.Author).OrderBy(x => x.LastUpdateDate).ToList();
+        var posts = context.Posts.AsNoTracking().Include(x => x.Author).Include(x => x.Category).OrderByDescending(x => x.LastUpdateDate).ToList();
 
         foreach (var post in posts)
         {
-            Console.WriteLine($"{post.Title} escrito por {post.Author?.Name}");
+            Console.WriteLine($"{post.Title} escrito por {post.Author?.Name} em {post.Category?.Name}");
         }
     }
 }
