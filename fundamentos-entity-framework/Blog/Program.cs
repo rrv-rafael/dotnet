@@ -1,6 +1,4 @@
-﻿using System.Security.Cryptography.X509Certificates;
-using Blog.Data;
-using Blog.Models;
+﻿using Blog.Data;
 using Microsoft.EntityFrameworkCore;
 
 namespace Blog;
