@@ -9,5 +9,7 @@ namespace FluentBlog.Models
         public string Image { get; set; } = string.Empty;
         public string Slug { get; set; } = string.Empty;
         public string Bio { get; set; } = string.Empty;
+        public IList<Post>? Posts { get; set; }
+        public IList<Role>? Roles { get; set; }
     }
 }

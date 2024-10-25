@@ -13,5 +13,6 @@ namespace FluentBlog.Models
         public required Category Category { get; set; }
         public int AuthorId { get; set; }
         public required User Author { get; set; }
+        public List<Tag>? Tags { get; set; }
     }
 }
