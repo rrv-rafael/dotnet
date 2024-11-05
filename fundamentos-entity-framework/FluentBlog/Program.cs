@@ -8,17 +8,25 @@ class Program
     static void Main(string[] args)
     {
         using var context = new FluentBlogDataContext();
+
+        var user = context.Users.FirstOrDefault();
         
-        context.Users.Add(new User
+        var post = new Post
         {
-            Bio = "12x Microsoft MVP",
-            Email = "andre@balta.io",
-            Image = "https://balta.io",
-            Name = "Andre Baltieri",
-            PasswordHash = "1234",
-            Slug = "andre-baltieri"
-        });
+            Author = user,
+            Body = "Meu artigo",
+            Category = new Category
+            {
+                Name = "Backend",
+                Slug = "backend"
+            },
+            CreateDate = DateTime.Now,
+            Slug = "meu-artigo",
+            Summary = "Neste artigo vamos conferir...",
+            Title = "Meu artigo",
+        };
         
+        context.Posts.Add(post);
         context.SaveChanges();
     }
 }
