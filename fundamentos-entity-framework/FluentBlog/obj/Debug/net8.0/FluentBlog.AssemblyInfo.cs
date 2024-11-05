@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FluentBlog")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+596a6cf8b72011234481491c2ac969fc0381b9cd")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a161ca5b99f76d493631509bb8f6134041821ab4")]
 [assembly: System.Reflection.AssemblyProductAttribute("FluentBlog")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FluentBlog")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
