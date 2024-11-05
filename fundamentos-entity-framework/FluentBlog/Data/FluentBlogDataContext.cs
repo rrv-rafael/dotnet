@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace FluentBlog.Data
 {
-    public class BlogDataContext : DbContext
+    public class FluentBlogDataContext : DbContext
     {
         public DbSet<Category> Categories { get; set; }
         public DbSet<Post> Posts { get; set; }
@@ -12,7 +12,7 @@ namespace FluentBlog.Data
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer("Server=localhost;Database=FluentBlog;User ID=sa;Password=1q2w3e4r@#$;TrustServerCertificate=True");
-            optionsBuilder.LogTo(Console.WriteLine);
+            //optionsBuilder.LogTo(Console.WriteLine);
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
